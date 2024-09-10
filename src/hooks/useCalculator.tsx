@@ -22,6 +22,11 @@ export const useCalculator = () => {
     }
   }, [number]);
 
+  useEffect(() => {
+    const subResult = calculateSubResult();
+    setPrevNumber(`${subResult}`);
+  }, [formula]);
+
   const buildNumber = (numberString: string) => {
     setNumber(number + numberString);
     if (number.includes('.') && numberString === '.') return;

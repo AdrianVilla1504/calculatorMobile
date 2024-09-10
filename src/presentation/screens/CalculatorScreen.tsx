@@ -3,13 +3,15 @@
 import {View, Text} from 'react-native';
 
 import {styles} from '../../config/theme/app-theme';
+import useCalculator from '../../hooks/useCalculator';
 import {CalculatorButton} from '../../components/CalculatorButton';
 export const CalculatorScreen = () => {
+  const {number, buildNumber} = useCalculator();
   return (
     <View style={styles.calculatorContainer}>
       <View style={{paddingHorizontal: 30, paddingBottom: 20}}>
-        <Text style={styles.mainResult}> 1500 </Text>
-        <Text style={styles.subResult}> 15 </Text>
+        <Text style={styles.mainResult}> {number} </Text>
+        <Text style={styles.subResult}> {number} </Text>
       </View>
       <View style={styles.row}>
         <CalculatorButton

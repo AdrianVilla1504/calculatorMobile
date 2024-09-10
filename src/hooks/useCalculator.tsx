@@ -89,6 +89,16 @@ export const useCalculator = () => {
     switch (lastOperation.current) {
       case Operators.add:
         setNumber(`${num1 + num2}`);
+        break;
+      case Operators.subtract:
+        setNumber(`${num2 - num1}`);
+        break;
+      case Operators.multiply:
+        setNumber(`${num1 * num2}`);
+        break;
+      case Operators.divide:
+        setNumber(`${num1 / num2}`);
+        break;
       default:
         throw new Error('Operation not implemented');
     }
@@ -106,6 +116,7 @@ export const useCalculator = () => {
     multiplyOperation,
     subtractOperation,
     addOperation,
+    calculateResult,
   };
 };
 

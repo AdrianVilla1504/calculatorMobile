@@ -32,6 +32,12 @@ export const styles = StyleSheet.create({
     textAlign: 'right',
     fontWeight: '300',
   },
+  row:{
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginBottom: 18,
+    paddingHorizontal: 10,
+  },
   button: {
     height: 80,
     width: 80,

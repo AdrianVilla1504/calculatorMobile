@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet } from 'react-native';
 
 export const colors = {
     darkGray: '#2D2D2D',
@@ -14,6 +14,11 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: colors.background,
     },
+    calculatorContainer: {
+        flex: 1,
+        padding: 20,
+        justifyContent: 'flex-end',
+    },
     mainResult: {
         color: colors.textPrimary,
         fontSize: 70,
@@ -26,5 +31,20 @@ export const styles = StyleSheet.create({
         fontSize: 40,
         textAlign: 'right',
         fontWeight: '300',
+    }, 
+    button: {
+        height: 80,
+        width: 80,
+        backgroundColor: colors.darkGray,
+        borderRadius: 100,
+        justifyContent: 'center',
+        marginHorizontal: 10,
+    },
+    ButtonText: {
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 30,
+        color: 'white',
+        fontWeight: '300'
     }
 })

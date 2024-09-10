@@ -1,9 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {
   StatusBar,
-  View
+  View,
 } from 'react-native';
-import { styles } from './config/theme/app-theme'
+import { styles } from './config/theme/app-theme';
 import { CalculatorScreen } from './presentation/screens/CalculatorScreen';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       />
       <CalculatorScreen/>
     </View>
-  ) 
+  );
 }
 
 export default App;

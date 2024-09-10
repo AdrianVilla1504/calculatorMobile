@@ -1,4 +1,4 @@
-import { Button, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const colors = {
     darkGray: '#2D2D2D',
@@ -7,7 +7,7 @@ export const colors = {
     textPrimary: 'white',
     textSecondary: '#666666',
     background: '#000000',
-}
+};
 
 export const styles = StyleSheet.create({
     background: {
@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
         fontSize: 40,
         textAlign: 'right',
         fontWeight: '300',
-    }, 
+    },
     button: {
         height: 80,
         width: 80,
@@ -45,6 +45,6 @@ export const styles = StyleSheet.create({
         padding: 10,
         fontSize: 30,
         color: 'white',
-        fontWeight: '300'
-    }
-})
+        fontWeight: '300',
+    },
+});
